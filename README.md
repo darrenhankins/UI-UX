@@ -188,17 +188,95 @@ JS Statements
 
 Functions
 * Segment of a program defined and performed in isolation from other parts
-* A function returns a value
-* Should do 1 thing and 1 thing only and does it well, and well tested
-* Subroutines are functions that return no value
-* Expression doesn't perform any code withi the the function
+* A `function` returns a value
+* Should do 1 thing and 1 thing only and does it well; well tested
+* `Subroutines` are functions that return no value
+* `Expression` doesn't perform any code withi the the function
 * Source code is only definition of function
-* When function is executed something useful happens
-* Code can be in the head or seperate file
-```bash
-<script type="text/javascript" src="path/filename.js">
+* When `function` is executed something useful happens
+* Code can be in the `<head>` or seperate file
+
+```html
+<script type="text/javascript" src="path/filename.js" ></script>
 ```
+
+
 * `Centralized Management` - Code in one place
 
-### Book `HTML & CSS: Design and Build Websites`
+Variables
+* var syntex to define a Variables
+
+Identifiers
+* can't use names that JS uses such as`if`
+* are names of variables and functions
+
+Libraies
+* collection of resources
+* function code and Subroutines
+* JS library is pre-written in JS
+
+JQuery
+* is leading JS library
+* other popular libraries Dojo, MooTools, YUI
+* can point to a centralized JS library
+
+`getElementById()` method
+* using DOM
+* returns a ref to first object with specified `id` or `NAME` attribute
+
+Methods
+* uses DOM
+* JS functions that belong to an `object`
+* always associated with and `object`
+* `isNaN()` ex. test for "not a number"
+* `document.getElementById()` ex. of a `method` with the special document `object`
+
+Events
+* `events` are actions that trigger and action to occur
+* `event handler` is a optional script to execute that handles input received in a program
+* a `callback` a response to an `event`, such as a script execution in response to a mouse click
+
+`onLoad` Event Handler
+* belongs to HTML items, it triggers when the owner is complete
+
+```html
+<!-- in <head> tag -->
+<script>
+function init() {
+  alert("Page has loaded.");
+}
+</script>
+
+<body onload="init();">
+
+```
+
+Flawd JS programs are erratic
+* they give different results at different times
+* Reasons Ex. hasn't completely loaded, launching  program at different times
+* fix with `onload`
+
+Showing and Hiding Elemetns
+* The `HMTL` display attribute
+
+```js
+first_paragraph.style.display = display;
+
+```
+```js
+oninput = "check_range()";
+```
+
+`innerHTML`
+* changes the current content of `html`
+
+```js
+total_slot.innerHTML = total;
+```
+
+
+
+###### Book `HTML & CSS: Design and Build Websites`
 ---
+
+Friday, June 3rd
